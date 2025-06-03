@@ -1,3 +1,5 @@
+// app/components/CategoryFilter.tsx
+
 'use client';
 
 import React from 'react';

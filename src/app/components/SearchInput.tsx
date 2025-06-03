@@ -1,3 +1,5 @@
+// app/components/SearchInput.tsx
+
 'use client';
 
 import React, { useState, useMemo } from 'react';

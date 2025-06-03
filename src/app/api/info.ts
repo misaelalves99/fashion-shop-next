@@ -1,4 +1,5 @@
 // app/api/info.ts
+
 'use server';
 
 import { InfoItem } from '../types/info';

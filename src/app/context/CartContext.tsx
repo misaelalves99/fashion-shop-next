@@ -1,20 +1,9 @@
+// app/context/CartContext.tsx
+
 'use client';
 
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-
-interface Product {
-  id: string | number;
-  // adicione aqui outras propriedades do produto conforme seu modelo, ex:
-  name?: string;
-  price?: number;
-  // ...
-}
-
-interface CartContextType {
-  cartItems: Product[];
-  addToCart: (product: Product) => void;
-  removeFromCart: (productId: string | number) => void;
-}
+import type { CartProduct, CartContextType } from '../types/cartContext';
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
@@ -31,14 +20,16 @@ interface CartProviderProps {
 }
 
 export const CartProvider = ({ children }: CartProviderProps) => {
-  const [cartItems, setCartItems] = useState<Product[]>([]);
+  const [cartItems, setCartItems] = useState<CartProduct[]>([]);
 
-  const addToCart = (product: Product) => {
+  const addToCart = (product: CartProduct) => {
     setCartItems((prevItems) => [...prevItems, product]);
   };
 
   const removeFromCart = (productId: string | number) => {
-    setCartItems((prevItems) => prevItems.filter((item) => item.id !== productId));
+    setCartItems((prevItems) =>
+      prevItems.filter((item) => item.id !== productId)
+    );
   };
 
   return (

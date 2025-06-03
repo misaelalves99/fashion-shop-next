@@ -1,12 +1,11 @@
+// app/components/Info.tsx
+
 'use client';
 
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { getInfo } from '../api/info';
 import { InfoItem } from '../types/info';
-
-
-// Importa todos os ícones necessários
 import { TbTruckDelivery } from 'react-icons/tb';
 import { GiPadlock } from 'react-icons/gi';
 import { RiMoneyDollarBoxLine } from 'react-icons/ri';
@@ -14,7 +13,6 @@ import { ImCheckboxChecked } from 'react-icons/im';
 import { IoCardOutline } from 'react-icons/io5';
 import { BsBox2 } from 'react-icons/bs';
 
-// Mapeamento de strings para os ícones reais
 const iconMap: Record<string, React.ReactElement> = {
   TbTruckDelivery: <TbTruckDelivery />,
   GiPadlock: <GiPadlock />,

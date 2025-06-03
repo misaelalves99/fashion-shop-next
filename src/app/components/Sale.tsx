@@ -1,11 +1,9 @@
+// app/components/Sale.tsx
+
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import {
-  BsFillLightningChargeFill,
-  BsChevronLeft,
-  BsChevronRight,
-} from 'react-icons/bs';
+import { BsFillLightningChargeFill, BsChevronLeft, BsChevronRight, } from 'react-icons/bs';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getProducts } from '../api/products';
 import { Product } from '../types/product';

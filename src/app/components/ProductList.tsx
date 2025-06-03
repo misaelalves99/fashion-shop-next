@@ -1,4 +1,4 @@
-// src/components/ProductList.tsx
+// app/components/ProductList.tsx
 
 'use client';
 

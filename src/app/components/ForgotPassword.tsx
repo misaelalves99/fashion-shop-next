@@ -1,3 +1,5 @@
+// app/components/ForgotPassword.tsx
+
 'use client';
 
 import React from 'react';

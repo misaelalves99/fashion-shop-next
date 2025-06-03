@@ -1,3 +1,5 @@
+// app/components/Cart.tsx
+
 'use client';
 
 import React from 'react';
@@ -6,7 +8,6 @@ import { useCart } from '../context/CartContext';
 import type { Product } from '../types/product';
 
 const Cart: React.FC = () => {
-  // Primeiro convertemos para unknown, depois para o tipo exato que usamos aqui
   const { cartItems, removeFromCart } = (useCart() as unknown as {
     cartItems: Product[];
     removeFromCart: (id: number) => void;

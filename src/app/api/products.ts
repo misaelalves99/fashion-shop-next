@@ -895,7 +895,6 @@ export const products: Product[] = [
 ];
 
 // Função de listagem simples, sem API real
-
 export async function getProducts(category?: string): Promise<Product[]> {
   if (category && category !== 'Todos') {
     return products.filter(p => p.category === category);

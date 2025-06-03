@@ -3,7 +3,6 @@
 import React, { ReactNode } from 'react';
 import Navbar from '../app/components/Navbar';
 import Footer from '../app/components/Footer';
-import MainContainer from '../app/components/MainContainer';
 import { CartProvider } from '../app/context/CartContext';
 import './globals.css';
 
@@ -17,7 +16,9 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
       <body className="bg-white text-gray-900">
         <CartProvider>
           <Navbar />
-          <MainContainer>{children}</MainContainer>
+          <main className="min-h-screen w-full bg-white text-black">
+            {children}
+          </main>
           <Footer />
         </CartProvider>
       </body>

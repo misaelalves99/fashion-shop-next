@@ -1,3 +1,5 @@
+// app/components/Navbar.tsx
+
 'use client';
 
 import React, { useState } from 'react';
@@ -20,10 +22,8 @@ export default function Navbar() {
 
   return (
     <section className="shadow-sm">
-      {/* Top navbar */}
       <div className="w-full bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4 md:px-10">
-          {/* Logo */}
           <Link href="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity duration-300">
             <FaShopify className="text-cyan-600 text-3xl" />
             <h1 className="text-xl font-extrabold tracking-wide text-gray-900">Fashion Shop</h1>

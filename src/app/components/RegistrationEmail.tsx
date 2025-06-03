@@ -1,3 +1,5 @@
+// app/components/RegistrationEmail.tsx
+
 'use client';
 
 import React from 'react';

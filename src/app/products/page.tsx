@@ -1,3 +1,5 @@
+// app/products/page.tsx
+
 'use client';
 
 import React, { useState, ChangeEvent } from 'react';
