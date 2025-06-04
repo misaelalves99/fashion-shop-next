@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}', // se você estiver usando a pasta /pages
+    './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
